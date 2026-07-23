@@ -86,6 +86,11 @@ smart-agriculture-plant-disease/
 
 ---
 
+## 🎥 Vidéo de démonstration
+
+[▶️ Regarder la démonstration complète du projet (10:16)](https://drive.google.com/file/d/1D3X0OknKJvb_A9PUGH0aEeouIggXTfbv/view?usp=sharing)
+
+
 ## 🔧 Installation
 
 ```bash

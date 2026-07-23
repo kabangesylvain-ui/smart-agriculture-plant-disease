@@ -90,15 +90,21 @@ smart-agriculture-plant-disease/
 
 [▶️ Regarder la démonstration complète du projet (10:16)](https://drive.google.com/file/d/1D3X0OknKJvb_A9PUGH0aEeouIggXTfbv/view?usp=sharing)
 
+
 ## 🏗️ Architecture du projet
 
-![Schéma d'architecture](images/architecture.png)
-Le système est composé de 3 modules principaux :
-1. **Classification** : EfficientNet B0-B3 (97,8% accuracy)
-2. **Détection** : YOLOv8n (mAP50: 44,9%)
-3. **Segmentation** : DeepLabV3+ (IoU: 95,76%)
+![Schéma d'architecture](architecture.png)
 
-Le tout est déployé via une API FastAPI et un dashboard Streamlit.
+Le système est composé de 3 modules principaux :
+
+| **Module** | **Modèle** | **Performance** |
+|------------|------------|-----------------|
+| **Classification** | EfficientNet B0-B3 | **97,8% accuracy** |
+| **Détection d'objets** | YOLOv8n | **mAP50: 44,9%** |
+| **Segmentation** | DeepLabV3+ | **IoU: 95,76%** |
+
+L'ensemble est déployé via une **API FastAPI** et un **dashboard Streamlit**.
+
 
 ## 🔧 Installation
 

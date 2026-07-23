@@ -93,7 +93,6 @@ smart-agriculture-plant-disease/
 ## 🏗️ Architecture du projet
 
 ![Schéma d'architecture](images/architecture.png)
-
 Le système est composé de 3 modules principaux :
 1. **Classification** : EfficientNet B0-B3 (97,8% accuracy)
 2. **Détection** : YOLOv8n (mAP50: 44,9%)

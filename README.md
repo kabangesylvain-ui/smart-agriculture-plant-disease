@@ -18,10 +18,16 @@ Les agriculteurs tunisiens subissent des pertes de rendement importantes dues au
 
 ## 📊 Dataset
 
-- **Nom** : PlantVillage
-- **Images** : 54 305 images
-- **Classes** : 38 classes de maladies
-- **Format** : JPG, RGB
+| **Caractéristique** | **Valeur** |
+|---------------------|------------|
+| **Nom** | PlantVillage |
+| **Images** | 54 305 images |
+| **Classes** | 38 classes de maladies |
+| **Format** | JPG, RGB |
+
+### Distribution des classes
+
+![Distribution des classes](images/EDA.png)
 
 ---
 
@@ -35,61 +41,21 @@ Les agriculteurs tunisiens subissent des pertes de rendement importantes dues au
 
 ---
 
-## 🏗️ Structure du projet
-smart-agriculture-plant-disease/
-├── README.md # Documentation
-├── requirements.txt # Dépendances Python
-├── .gitignore # Fichiers ignorés
-├── .env # Variables d'environnement
-│
-├── 📓 notebooks/
-│ ├── EDA.ipynb # Analyse exploratoire
-│ ├── Modèle.ipynb # Entraînement EfficientNet
-│ ├── Segmentation.ipynb # Segmentation DeepLabV3+
-│ ├── YOLOv8.ipynb # Détection YOLOv8
-│ └── Évaluation.ipynb # Évaluation des modèles
-│
-├── 🐍 scripts/
-│ ├── app.py # API FastAPI
-│ ├── streamlit_app.py # Dashboard interactif
-│ └── entraînement.py # Script d'entraînement
-│
-├── 📊 results/
-│ ├── matrice_de_confusion.png
-│ ├── courbes_d'entraînement.png
-│ ├── yolo_visual_results_100epochs.png
-│ └── ...
-│
-└── 📁 data/
-├── diagnostic_feedback.db
-└── base de données plantes_maladies.db
+## 📈 Résultats détaillés
 
+### Matrice de confusion
+
+![Matrice de confusion](images/Matrice%20de%20confusion.png)
+
+### Métriques par classe
+
+![Métriques](images/M%C3%A9trique.png)
+
+### Graphiques d'analyse
+
+![Graphiques](images/Graphique.png)
 
 ---
-
-## 🚀 Déploiement
-
-- **API** : FastAPI pour les prédictions en temps réel
-- **Interface** : Dashboard Streamlit pour la visualisation
-- **Stack** : PyTorch, YOLOv8, DeepLabV3+
-
----
-
-## 📈 Résultats
-
-| **Métrique** | **Valeur** |
-|--------------|------------|
-| Accuracy (classification) | **97,8%** |
-| mAP50 (détection) | **44,9%** |
-| IoU (segmentation) | **95,76%** |
-| Dice Score (segmentation) | **0,9775** |
-
----
-
-## 🎥 Vidéo de démonstration
-
-[▶️ Regarder la démonstration complète du projet (10:16)](https://drive.google.com/file/d/1D3X0OknKJvb_A9PUGH0aEeouIggXTfbv/view?usp=sharing)
-
 
 ## 🏗️ Architecture du projet
 
@@ -105,24 +71,36 @@ Le système est composé de 3 modules principaux :
 
 L'ensemble est déployé via une **API FastAPI** et un **dashboard Streamlit**.
 
+---
 
-## 🔧 Installation
+## 📸 Dashboard Streamlit
 
-```bash
-# Cloner le dépôt
-git clone https://github.com/kabangesylvain-ui/smart-agriculture-plant-disease.git
-cd smart-agriculture-plant-disease
+### Page d'accueil
 
-# Créer un environnement virtuel
-python -m venv venv
-source venv/bin/activate  # Sur Windows : venv\Scripts\activate
+![Page d'accueil](images/Page%20d'accueil.png)
 
-# Installer les dépendances
-pip install -r requirements.txt
+### Page de connexion
 
+![Page de connexion](images/Page%20de%20connexion.png)
+
+### Paramètres
+
+![Paramètres](images/param%C3%A8tre.png)
+
+### Capteurs IoT
+
+![Capteurs](images/capteur.png)
+
+### Statistiques globales du dataset
+
+![Statistiques globales](images/%F0%9F%93%8B%20Statistiques%20globales%20du%20dataset.png)
 
 ---
 
-### Étape 2 : Valider les modifications
+## 🎥 Vidéo de démonstration
 
-1. **En bas de la page**, vous verrez :
+[▶️ Regarder la démonstration complète du projet (10:16)](https://drive.google.com/file/d/1D3X0OknKJvb_A9PUGH0aEeouIggXTfbv/view?usp=sharing)
+
+---
+
+## 🏗️ Structure du projet
